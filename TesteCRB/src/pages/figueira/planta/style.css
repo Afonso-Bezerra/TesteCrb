@@ -1,0 +1,372 @@
+*{
+    animation: fadetela 1s ease-in-out; 
+}
+
+body{
+    background-color: #E5E5E5;
+    overflow: hidden;
+}
+
+#title{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0);
+    width: 750px;
+    height: 19px;
+    top: 150px;
+    left: 350px;
+    right: auto;
+}
+#title a{
+    font-family: Work Sans;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 20px;
+    text-align: center;
+    color: rgb(2, 2, 71);
+}
+
+ #linha1{
+    position: absolute;
+    bottom: 100px;
+    left: -5px;
+}
+
+#linha1 img{
+    width: 100%;
+    height: 4px;
+}
+
+
+#linha2{
+   position: absolute;
+   bottom: 100px;
+   left: -80%;
+   transform: rotate(-95deg);
+}
+
+#linha2 img{
+   width: 100%;
+   height: 4px;
+}
+
+#linha3{
+   position: absolute;
+   top: 100px;
+   left: -80%;
+   transform: rotate(125deg);
+}
+
+#linha3 img{
+   width: 100%;
+   height: 4px;
+}
+
+#logo{
+   position: absolute;
+   right: 20px;
+   bottom: 20px;
+}
+
+#planta1{
+    position: fixed;
+    left: 20%;
+    top: 22%;
+    width: 800px;
+    height: 600px;
+    display: none;
+}
+#planta1 img{
+    width: 100%;
+    height: 100%;
+}
+
+#planta2{
+    position: fixed;
+    left: 20%;
+    top: 22%;
+    width: 800px;
+    height: 600px;
+    display: none;
+}
+#planta2 img{
+    width: 100%;
+    height: 100%;
+}
+
+
+#layout{
+    position: absolute;
+    width: 300px;
+    height: 600px;
+    right: 25%;
+    top: 25%;
+
+}
+
+.select-box {
+    position: relative;
+    display: block;
+    width: 500px;
+    flex-direction: column;
+   
+  }
+  
+  .select-box .options-container {
+    background: #ffffff;
+    color:#0B94BF;
+    max-height: 0;
+    width: 100%;
+    height: 800px;
+    opacity: 0;
+    transition: all 0.4s;
+    border-radius: 8px;
+    overflow: hidden;
+    order: 1;
+    position: absolute;
+    z-index: 100;
+    border-style: solid;
+    border-width: 1px;
+    border-image: radial-gradient(rgb(153, 4, 199), rgb(96, 195, 252)) 1;    
+}
+  
+  .selected {
+    background: #ffffff;
+    border-radius: 8px;
+    color:#0B94BF ;
+    
+    border-style: solid;
+    border-width: 1px;
+    border-image: radial-gradient(rgb(153, 4, 199), rgb(96, 195, 252)) 1;
+    position: relative;
+    order: 0;
+  }
+  
+  .selected::after {
+    content: "";
+    background: url("../../../asstes/Img/seta_baixo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  
+    position: absolute;
+    height: 100%;
+    width: 10px;
+    right: 10px;
+    top: 20px;
+  
+    transition: all 0.4s;
+  }
+  
+  .select-box .options-container.active {
+    max-height: 400px;
+    opacity: 1;
+    overflow-y: scroll;
+    margin-top: 60px;
+  }
+  
+  .select-box .options-container.active + .selected::after {
+    transform: rotateX(180deg);
+    top: -12px;
+  }
+  
+  .select-box .options-container::-webkit-scrollbar {
+   display: none;
+  }
+  
+  .select-box .options-container::-webkit-scrollbar-thumb {
+    background: #525861;
+    border-radius: 0 8px 8px 0;
+  }
+  
+  .select-box .option,
+  .selected {
+    padding: 12px 24px;
+    cursor: pointer;
+  }
+  
+  .select-box .option:hover {
+    background: #c0c1c2;
+  }
+  
+  .select-box label {
+    cursor: pointer;
+  }
+  
+
+#button_back{
+    position: absolute;
+    right: 470px;
+    top:740px
+}
+
+
+.custom-btn {
+ width: 130px;
+ height: 40px;
+ padding: 10px 25px;
+ font-family: 'Lato', sans-serif;
+ font-weight: 500;
+ background: transparent;
+ cursor: pointer;
+ transition: all 0.3s ease;
+ position: relative;
+ display: inline-block;
+}
+
+.btn-1 {
+background: transparent;
+color: #344F84;;
+line-height: 42px;
+padding: 0;
+border: none;
+border-style: solid;
+border-width: 2px;
+font-weight: bold;
+border-image: radial-gradient(rgb(153, 4, 199), rgb(96, 195, 252)) 1;
+}
+.btn-1 span {
+position: relative;
+top: -2px;
+display: block;
+width: 100%;
+height: 100%;
+}
+.btn-1:before,
+.btn-1:after {
+position: absolute;
+content: "";
+height: 0%;
+width: 2px;
+color: #344F84;
+background:  linear-gradient(137.6deg, #5F0CB2 0%, #0B94BF 100%);
+}
+.btn-1:before {
+right: 0;
+top: 0;
+transition: all 500ms ease;
+}
+.btn-1:after {
+left: 0;
+bottom: 0;
+transition: all 500ms ease;
+}
+.btn-1:hover{
+ background:  linear-gradient(137.6deg, #5F0CB2 0%, #0B94BF 100%);
+ color: rgb(255, 255, 255);
+
+}
+.btn-1:hover:before {
+transition: all 500ms ease;
+height: 100%;
+}
+.btn-1:hover:after {
+transition: all 500ms ease;
+height: 100%;
+}
+.btn-1 span:before,
+.btn-1 span:after {
+position: absolute;
+content: "";
+color: rgb(255, 255, 255);
+background:  linear-gradient(137.6deg, #5F0CB2 0%, #0B94BF 100%);
+}
+.btn-1 span:before {
+left: 0;
+top: 0;
+width: 0%;
+height: 2px;
+transition: all 500ms ease;
+}
+.btn-1 span:after {
+right: 0;
+bottom: 0;
+width: 0%;
+height: 2px;
+transition: all 500ms ease;
+}
+.btn-1 span:hover:before {
+width: 100%;
+}
+.btn-1 span:hover:after {
+width: 100%;
+}
+
+
+/* Canvas */
+#start{
+    position: absolute;
+    right: 5px;
+}
+#start img{
+    width:40px;
+    height: 40px;
+    border: 0;
+}
+
+#canvas{
+    display: none;
+}
+
+.app {
+    position:fixed;
+    top:10%;
+    left:0px;
+    transform:translate(-50%,-50%);
+    width:50px;
+    height:200px;
+    font-family:"Raleway", sans-serif;
+  }
+  .app .controls {
+    height:50px;
+    display:flex;
+    align-items:center;
+    background:rgba(221, 221, 221, 0);
+    padding:0px 10px;
+  }
+  .app .controls .title {
+    font-weight:600;
+    color:#222;
+    width:80px;
+  }
+  .app .controls .type,
+  .app .controls .size,
+  .app .controls .color {
+    margin: 0px 10px;
+  }
+  .app .controls .type input {
+    display:none;
+  }
+  .app .controls .type label {
+    width:30px;
+    height:30px;
+    display:inline-block;
+    text-align:center;
+    line-height:30px;
+    margin:0px 2px;
+    cursor:pointer;
+  }
+  .app .controls .type input:checked + label {
+    background:#111;
+    color:#eee;
+    border-radius:50%;
+  }
+  .app .controls .size input {
+    height:10px;
+  }
+  .app .controls .actions {
+    flex:1;
+    text-align:right;
+  }
+  .app .controls .actions button {
+    padding:5px 10px;
+    cursor:pointer;
+  }
+
+/* Animaçoes */
+@keyframes fadetela {
+    0% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+  }

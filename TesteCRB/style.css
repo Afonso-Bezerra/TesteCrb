@@ -1,0 +1,367 @@
+*{
+    animation: fadetela 1s ease-in-out; 
+}
+
+
+body{
+    background-color: #E5E5E5;
+    overflow: hidden;
+}
+#title{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    width: 750px;
+    height: 19px;
+    top: 120px;
+    left: 600px;
+    right: auto;
+}
+#title a{
+    font-family: Work Sans;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 20px;
+    text-align: center;
+    color: rgb(2, 2, 71);
+}
+
+#predio1{
+    background: rgba(0, 0, 0, 0.918);
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    left: 350px;
+    top:230px;
+    box-shadow: 0px 0px 5px rgba(10, 10, 10, 0.623);
+}
+
+#efeitozoom1{
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#efeitozoom1 img{
+ 
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+    transition: filter 0.5s linear,transform 2s ease;
+    
+}
+
+#predio1:hover img {
+    
+    filter: grayscale(0%);
+    transform: scale(1.05);
+    
+}
+#predio1:hover #cardpredio1::before {
+    opacity: 1;
+}
+
+#cardpredio1{
+    background: linear-gradient(137.6deg, #7C7C7C 0%,  #7C7C7C 100%);
+    position: absolute;
+    width: 300px;
+    height: 70px;
+    left: 0px;
+    top: 500px;
+    z-index: -1;
+    cursor: pointer;
+  
+}
+
+#cardpredio1::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(137.6deg, #5F0CB2 0%, #0B94BF 100%);
+    transition: opacity 0.5s linear;
+    opacity: 0;
+  
+}
+
+#cardpredio1:hover::before{
+    opacity: 1;
+  }
+#clique1 {
+    position: absolute;
+    left: 3.7%;
+    right: 3.7%;
+    top: 20%;
+    bottom: 19.09%;
+    border: 1px solid #F8F8F8;
+    box-sizing: border-box;
+    border-radius: 1.8px;
+}
+#clique1 a{
+   position: absolute;
+   left: 9%;
+   top: 23%;
+   font-family: Work Sans;
+   font-weight: bold;
+   font-size: 20px;
+   color: #F8F8F8;
+
+}
+#clique1 p{
+   position: absolute;
+   left: 74%;
+   top:-60px;
+   font-size:50px; 
+   color:white;
+}
+#predio1:hover p{
+    animation: go-and-back 2s infinite;
+
+}
+
+#predio2{
+    background-color: rgb(0, 0, 0);
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    left: 800px;
+    top:230px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.658);
+}
+#efeitozoom2{
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#efeitozoom2 img{
+  
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+    transition: filter 0.5s linear,transform 2s ease;
+}
+
+#predio2:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+#predio2:hover #cardpredio2::before {
+    opacity: 1;
+}
+
+#cardpredio2{
+    background: linear-gradient(137.6deg, #7C7C7C 0%,  #7C7C7C 100%);
+    position: absolute;
+    width: 300px;
+    height: 70px;
+    left: 0px;
+    top: 500px;
+    z-index: -1;
+  
+}
+
+#cardpredio2::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(137.6deg, #5F0CB2 0%, #0B94BF 100%);
+    transition: opacity 0.5s linear;
+    opacity: 0;
+  
+}
+#clique2 {
+    position: absolute;
+    left: 3.7%;
+    right: 3.7%;
+    top: 20%;
+    bottom: 19.09%;
+    border: 1px solid #F8F8F8;
+    box-sizing: border-box;
+    border-radius: 1.8px;
+}
+#clique2 a{
+    position: absolute;
+    left: 9%;
+    top: 23%;
+    font-family: Work Sans;
+    font-weight: bold;
+    font-size: 20px;
+    color: #F8F8F8;
+ 
+ }
+ #clique2 p{
+    position: absolute;
+    left: 74%;
+    top:-60px;
+    font-size:50px; 
+    color:white;
+ }
+ #predio2:hover p{
+     animation: go-and-back 2s infinite;
+ 
+ }
+
+#predio3{
+    background-color: rgb(0, 0, 0);
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    left: 1250px;
+    top:230px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.658);
+}
+#efeitozoom3{
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#efeitozoom3 img{
+  
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+    transition: filter 0.5s linear,transform 2s ease;
+}
+
+#predio3:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+#predio3:hover #cardpredio3::before {
+    opacity: 1;
+}
+#cardpredio3{
+    background: linear-gradient(137.6deg, #7C7C7C 0%,  #7C7C7C 100%);
+    position: absolute;
+    width: 300px;
+    height: 70px;
+    left: 0px;
+    top: 500px;
+    z-index: -1;
+  
+}
+#cardpredio3::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(137.6deg, #5F0CB2 0%, #0B94BF 100%);
+    transition: opacity 0.5s linear;
+    opacity: 0;
+  
+}
+
+#clique3 {
+    position: absolute;
+    left: 3.7%;
+    right: 3.7%;
+    top: 20%;
+    bottom: 19.09%;
+    border: 1px solid #F8F8F8;
+    box-sizing: border-box;
+    border-radius: 1.8px;
+}
+#clique3 a{
+    position: absolute;
+    left: 9%;
+    top: 23%;
+    font-family: Work Sans;
+    font-weight: bold;
+    font-size: 20px;
+    color: #F8F8F8;
+
+ }
+ #clique3 p{
+    position: absolute;
+    left: 74%;
+    top:-60px;
+    font-size:50px; 
+    color:white;
+ }
+ #predio3:hover p{
+     animation: go-and-back 2s infinite;
+ 
+ }
+
+ #linha1{
+    position:fixed;
+     bottom: 100px;
+     left: -5px;
+ }
+
+ #linha1 img{
+     width: 100%;
+     height: 4px;
+ }
+
+
+ #linha2{
+    position:fixed;
+    bottom: 100px;
+    left: -80%;
+    transform: rotate(-95deg);
+}
+
+#linha2 img{
+    width: 100%;
+    height: 4px;
+}
+
+#linha3{
+    position:fixed;
+    top: 100px;
+    left: -80%;
+    transform: rotate(125deg);
+}
+
+#linha3 img{
+    width: 100%;
+    height: 4px;
+}
+
+#logo{
+    position:fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+
+/* Animaçoes */
+
+@keyframes go-and-back {
+    from {
+      transform: translateX(0px);
+    }
+    to {
+      transform: translateX(10px);
+    }
+  }
+  @keyframes go-and-back-click {
+    from {
+      transform: translateX(0px);
+    }
+    to {
+      transform: translateX(10px);
+    }
+  }
+
+  @keyframes fadetela {
+    0% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+
+  

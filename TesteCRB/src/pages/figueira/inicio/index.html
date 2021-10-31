@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../asstes/bibliotecas/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Figueira</title>
+</head>
+<body>
+
+    <div class='container'>
+
+        <div id='title'>
+            <a>Figueira Cambuí</a>
+        </div>
+
+
+      <div id='linha1'>
+          <img src="../../../asstes/Img/Line 1.png" alt="img">
+      </div>
+      <div id='linha2'>
+        <img src="../../../asstes/Img/Line 1.png" alt="img">
+    </div>
+    <div id='linha3'>
+        <img src="../../../asstes/Img/Line 1.png" alt="img">
+    </div>
+
+    <div id='logo'>
+        <img src="../../../asstes/Img/Logo CRB Construtora.png" alt="" srcset="">
+    </div>
+
+    <div class="w3-content w3-display-container">
+        <img class="mySlides" src="../../../asstes/Img/figueira/quarto.jpg" style="width:100%">
+    
+        <img class="mySlides" src="../../../asstes/Img/figueira/salao.jpg" style="width:100%">
+
+        <img class="mySlides" src="../../../asstes/Img/figueira/sala.jpg" style="width:100%">
+      
+      
+        <div class="w3-center w3-section w3-large w3-text-white w3-display-bottomleft" style="width:40%">
+        
+       <div class="esquerda" onclick="plusDivs(-1)"><img src="../../../asstes/Img/setaesq.png" alt="seta"></div>
+       <div class="direita" onclick="plusDivs(1)"><img src="../../../asstes/Img/seta_dir.png" alt="seta"></div>
+       <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+       
+       <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+       <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+
+    </div>
+  
+    </div>
+
+
+    <div id='conhecendo'>
+
+        <a>Seu Perfil</a>
+
+        <a1>Morador ou investidor?</a1>
+
+        <div id='checks'>
+            
+        <p>
+            <input type="checkbox" name="Morador" id="check1" onclick="marcaDesmarca(this)">
+            <label for="check1">Morador</label>
+        </p>
+
+         <p>
+            <input type="checkbox" name="investidor" id="check2" onclick="marcaDesmarca(this)">
+            <label for="check2">Investidor</label>
+        </p>
+            
+        </div>
+    
+    </div>
+
+    <div id='apartamento'>
+      
+        <a>Seu Apartamento</a>
+
+    <div id='list1'>
+         
+        <div class="select-box">
+            <div class="options-container">
+              <div class="option">
+                <input type="radio" class="radio" id="metros1" name="category"/>
+                <label for="metros1">200m²</label>
+              </div>
+    
+              <div class="option">
+                <input type="radio" class="radio" id="metros2" name="category" />
+                <label for="metros2">150m²</label>
+              </div>
+    
+
+            </div>
+    
+            <div class="selected" id='primeiro'>
+              Metragem
+            </div>
+    
+          
+         <p></p>
+    
+          <div class="select-box">
+            <div class="options-container">
+              <div class="option">
+                <input type="radio" class="radio" id="quarto" name="category" />
+                <label for="quarto">Open Living</label>
+              </div>
+    
+              <div class="option">
+                <input type="radio" class="radio" id="mais" name="category"  />
+                <label for="smais">Sky Windown</label>
+              </div>
+    
+            </div>
+    
+            <div class="selected" id='segundo'>
+              Layout
+            </div>
+    
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id='button_go'>
+        <button class="custom-btn btn-1"  onClick="go_planta()"><span>Avançar</span></button>
+    </div>
+    
+    <div id='button_back'>
+        <button class="custom-btn btn-1"  onClick="history.go(-1)"><span>Voltar</span></button>
+    </div>
+</div>
+
+    </div>
+
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="./script.js"></script>
+
+</body>
+</html>

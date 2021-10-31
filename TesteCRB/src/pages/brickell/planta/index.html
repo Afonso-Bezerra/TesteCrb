@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Figueira</title>
+</head>
+<body>
+
+    <div class='container'>
+
+        <div id='title'>
+            <a>Lagacy Campolim</a>
+        </div>
+
+
+      <div id='linha1'>
+          <img src="../../../asstes/Img/Line 1.png" alt="img">
+      </div>
+      <div id='linha2'>
+        <img src="../../../asstes/Img/Line 1.png" alt="img">
+    </div>
+    <div id='linha3'>
+        <img src="../../../asstes/Img/Line 1.png" alt="img">
+    </div>
+
+    <div id='logo'>
+        <img src="../../../asstes/Img/Logo CRB Construtora.png" alt="" srcset="">
+    </div>
+
+
+    <div id='planta1'> 
+        <img src="../../../asstes/Img/figueira/planta/planta1.png" alt="img">
+    </div>
+
+
+    <div id='planta2'> 
+        <img src="../../../asstes/Img/figueira/planta/planta2.png" alt="img">
+    </div>
+
+    <div id='layout'>
+        
+        <div class="select-box">
+            <div class="options-container">
+              <div class="option">
+                <input type="radio" class="radio" id="metros1" name="category"/>
+                <label for="metros1">
+                    Open Living
+                    <p></p>
+                    <img src="../../../asstes/Img/figueira/planta/mini_planta_open.png" alt="img">
+                </label>
+              </div>
+    
+              <div class="option">
+                <input type="radio" class="radio" id="metros2" name="category" />
+                <label for="metros2">
+                    Sky Windown
+                    <p></p>
+                    <img src="../../../asstes/Img/figueira/planta/sky.png" alt="img">
+                </label>
+              </div>
+            </div>
+            <div class="selected">
+            Layout
+            </div>
+
+        </div>
+        
+    </div>
+        <div id='button_back'>
+            <button class="custom-btn btn-1"  onClick="history.go(-1)"><span>Voltar</span></button>
+        </div>
+
+        <button id='start' onclick="start()"><img src="../../../asstes/Img/canvas.png" alt=""></button>
+
+    <div id='canvas'>
+        <div class="app">
+            <div class="controls">
+              <div class="type">
+                <input type="radio" name="pen-type" id="pen-pencil" checked>
+              </div>
+              <div class="color">
+                <input type="color" id="pen-color" value="#000">
+              </div>
+              <div class="actions">
+                <button id="reset-canvas">Reset</button>
+              </div>
+            </div>
+            <div id="canvas-wrapper"></div>
+          </div>
+    </div>
+
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.min.js"></script>
+<script src="./script.js"></script>
+</body>
+</html>

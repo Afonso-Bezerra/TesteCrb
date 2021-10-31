@@ -1,0 +1,451 @@
+*{
+    animation: fadetela 1s ease; 
+}
+
+body{
+    background-color: #E5E5E5;
+    overflow: hidden;
+}
+
+#title{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0);
+    width: 750px;
+    height: 19px;
+    top: 180px;
+    left: 350px;
+    right: auto;
+}
+#title a{
+    font-family: Work Sans;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 20px;
+    text-align: center;
+    color: rgb(2, 2, 71);
+}
+
+ #linha1{
+    position: fixed;
+    bottom: 100px;
+    left: -5px;
+}
+
+#linha1 img{
+    width: 100%;
+    height: 4px;
+}
+
+
+#linha2{
+   position: fixed;
+   bottom: 100px;
+   left: -80%;
+   transform: rotate(-95deg);
+}
+
+#linha2 img{
+   width: 100%;
+   height: 4px;
+}
+
+#linha3{
+   position:fixed;
+   top: 100px;
+   left: -80%;
+   transform: rotate(125deg);
+}
+
+#linha3 img{
+   width: 100%;
+   height: 4px;
+}
+
+#logo{
+   position: fixed;
+   right: 20px;
+   bottom: 20px;
+}
+
+.demo{
+    position: relative;
+    left: 280px;
+    bottom: 30px;
+
+}
+
+.esquerda img{
+    position: absolute;
+      width: 100px;
+      left: 80px ;
+      margin-top: -450px;
+      float: left;
+      border: 1px black
+   
+    
+    }
+.direita img{
+    position: absolute;
+    width: 100px;
+    right: -500px;
+    top: -450px;
+    float: right;
+      
+    }
+.w3-content {
+      max-width: 1000px !important;
+      max-height: 1000px !important;
+      margin-top: 250px;
+      margin-left: 250px;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.637);
+    }
+    
+    .w3-content img {
+    animation: zoom 15s infinite, fadeIn 1.5s ease-in-out;
+       
+        
+      }
+
+.w3-badge {
+      height: 20px;
+      width: 20px;
+      padding: 0;
+      margin-left: 10px;
+      
+    
+    }
+
+#conhecendo a{
+    position: absolute;
+    width: 145px;
+    height: 24px;
+    right: 435px;
+    top: 355px;
+    font-family: Work Sans;
+    font-weight: bold;
+    font-size: 26px;
+    color: #344F84;
+}
+
+#conhecendo a1{
+    position: absolute;
+    width: 250px;
+    height: 24px;
+    right: 330px;
+    top: 390px;
+    font-family: Work Sans;
+    font-size: 20px;
+    color: #344F84;
+    }
+ 
+    #checks{
+        position: absolute;
+        right: 510px;
+        top:410px;
+    }
+
+    [type="checkbox"]{
+        display: none;
+    } 
+    
+    [type="checkbox"] + label{
+        position: relative;
+        cursor: pointer;
+        left: 30px;
+        display: inline-block;
+        color:#0B94BF;
+        line-height: 25px;
+    } 
+
+    [type="checkbox"] + label::before{
+        content: "";
+        position: absolute;
+        width: 15px;
+        left: -20px;
+        top:4px;
+        height: 15px;
+        outline: 2px solid #aaaa;
+        background: #fff;
+    }
+
+    [type="checkbox"]:checked + label::before{
+        content: "";
+        position: absolute;
+        width: 15px;
+        left: -20px;
+        top:4px;
+        height: 15px;
+        outline: 2px solid #0B94BF;
+        background: #fff;
+    }
+
+    [type="checkbox"]:checked + label::after{
+        content: "";
+        position: absolute;
+        width: 15px;
+        left: -20px;
+        top:4px;
+        height: 15px;
+        background-image: url('../../../asstes/Img/trans-check.png');
+        background-size: contain;
+        transform: scale(1);
+        opacity: 1;
+        transition: all .3s ease;
+    }
+
+    [type="checkbox"]:not(:checked) + label::after{
+        content: "";
+        position: absolute;
+        width: 15px;
+        left: -20px;
+        top:4px;
+        height: 15px;
+        background-image: url('../../../asstes/Img/trans-check.png');
+        background-size: contain;
+        color:#0B94BF ;
+        transform: scale(0);
+        opacity: 0;
+    }
+
+
+    #apartamento a{
+        position: absolute;
+        width: 200px;
+        height: 24px;
+        right: 379px;
+        top: 510px;
+        font-family: Work Sans;
+        font-weight: bold;
+        font-size: 26px;
+        color: #344F84;
+    }
+
+    
+    #list1{
+        position: absolute;
+        right: 280px;
+        top: 550px;
+        box-sizing: border-box;
+    }
+
+    .select-box {
+        position: relative;
+        display: block;
+        width: 300px;
+        flex-direction: column;
+       
+      }
+      
+      .select-box .options-container {
+        background: #ffffff;
+        color:#0B94BF;
+        max-height: 0;
+        width: 100%;
+        opacity: 0;
+        transition: all 0.4s;
+        border-radius: 8px;
+        overflow: hidden;
+        order: 1;
+        position: absolute;
+        z-index: 100;
+       
+    }
+      
+      .selected {
+        background: #ffffff;
+        border-radius: 8px;
+        color:#0B94BF ;
+   
+        position: relative;
+        order: 0;
+      }
+      
+      .selected::after {
+        content: "";
+        background: url("../../../asstes/Img/seta_baixo.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        height: 100%;
+        width: 10px;
+        right: 10px;
+        top: 20px;
+        transition: all 0.4s;
+      }
+      
+      .select-box .options-container.active {
+        max-height: 240px;
+        opacity: 1;
+        overflow-y: scroll;
+        margin-top: 60px;
+      }
+      
+      .select-box .options-container.active + .selected::after {
+        transform: rotateX(180deg);
+        top: -12px;
+      }
+      
+      .select-box .options-container::-webkit-scrollbar {
+       display: none;
+      }
+      
+      .select-box .options-container::-webkit-scrollbar-thumb {
+        background: #525861;
+        border-radius: 0 8px 8px 0;
+      }
+      
+      .select-box .option,
+      .selected {
+        padding: 12px 24px;
+        cursor: pointer;
+      }
+      
+      .select-box .option:hover {
+        background: #c0c1c2;
+      }
+      
+      .select-box label {
+        cursor: pointer;
+      }
+      
+      .select-box .option .radio {
+        display: none;
+      }
+
+   #button_back{
+       position: absolute;
+       right: 450px;
+       top:690px
+   }
+
+   #button_go{
+    position: absolute;
+    right: 280px;
+    top:690px
+   }
+   
+  .custom-btn {
+    width: 130px;
+    height: 40px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+  }
+  
+.btn-1 {
+   background: transparent;
+   color: #344F84;;
+   line-height: 42px;
+   padding: 0;
+   border: none;
+   border-style: solid;
+   border-width: 2px;
+   font-weight: bold;
+   border-image: radial-gradient(rgb(153, 4, 199), rgb(96, 195, 252)) 1;
+ }
+ .btn-1 span {
+   position: relative;
+   top: -2px;
+   display: block;
+   width: 100%;
+   height: 100%;
+ }
+ .btn-1:before,
+ .btn-1:after {
+   position: absolute;
+   content: "";
+   height: 0%;
+   width: 2px;
+   color: #344F84;
+   background:  linear-gradient(137.6deg, #5F0CB2 0%, #0B94BF 100%);
+ }
+ .btn-1:before {
+   right: 0;
+   top: 0;
+   transition: all 500ms ease;
+ }
+ .btn-1:after {
+   left: 0;
+   bottom: 0;
+   transition: all 500ms ease;
+ }
+ .btn-1:hover{
+    background:  linear-gradient(137.6deg, #5F0CB2 0%, #0B94BF 100%);
+    color: rgb(255, 255, 255);
+   
+ }
+ .btn-1:hover:before {
+   transition: all 500ms ease;
+   height: 100%;
+ }
+ .btn-1:hover:after {
+   transition: all 500ms ease;
+   height: 100%;
+ }
+ .btn-1 span:before,
+ .btn-1 span:after {
+   position: absolute;
+   content: "";
+   color: rgb(255, 255, 255);
+   background:  linear-gradient(137.6deg, #5F0CB2 0%, #0B94BF 100%);
+ }
+ .btn-1 span:before {
+   left: 0;
+   top: 0;
+   width: 0%;
+   height: 2px;
+   transition: all 500ms ease;
+ }
+ .btn-1 span:after {
+   right: 0;
+   bottom: 0;
+   width: 0%;
+   height: 2px;
+   transition: all 500ms ease;
+ }
+ .btn-1 span:hover:before {
+   width: 100%;
+ }
+ .btn-1 span:hover:after {
+   width: 100%;
+ }
+      
+/* Animaçoes */
+@keyframes fadetela {
+    0% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+  
+  @keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.02);
+    }
+    100% {
+        transform: scale(1);
+    }
+  }
+  
